@@ -1,1 +1,1 @@
-export * from './subtracao.component';
+exports * from './subtracao.component';

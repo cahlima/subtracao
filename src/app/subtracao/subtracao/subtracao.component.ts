@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SubtracaoService } from '../services';
 
 @Component({
   selector: 'app-subtracao',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SubtracaoComponent implements OnInit {
 
 
-  constructor() {}
+  constructor(private subtracaoService: SubtracaoService ) {}
 
   ngOnInit(): void {
     
