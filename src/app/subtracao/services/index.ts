@@ -1,2 +1,2 @@
-exports * from './subtracao.service';
+export * from './subtracao.service';
 

@@ -1,8 +1,7 @@
-import { SubtracaoService } from './services/subtracao.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SubtracaoComponent } from './subtracao';
-import { SubtracaoService } from './service';
+import { SubtracaoService } from './services';
 
 
 

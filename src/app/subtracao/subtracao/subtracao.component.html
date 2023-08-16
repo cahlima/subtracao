@@ -1,7 +1,8 @@
 <p>subtracao works!</p>
 <form>
-    Número 1: <input type="text"/><br/>
-    Numero 2: <input type="text"/><br/>
-    <input type="button" value="Subtrair"/><br/><br/>
-    Resultado: <input type="text"/>
+    Número 1: <input #numero1 type="text"/><br/>
+    Numero 2: <input #numero2 type="text"/><br/>
+    <input type="button" value="Subtrair"
+    (click)="subtrair(numero1.value, numero2.value)" /><br/><br/>
+    Resultado: <input type="text"/> [value]="resultado" readonly />
 </form>
