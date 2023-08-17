@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SubtracaoComponent } from './subtracao';
 import { SubtracaoService } from './services';
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -10,11 +13,20 @@ import { SubtracaoService } from './services';
     SubtracaoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    MatButtonModule
+
   ],
 exports: [
 
-  SubtracaoComponent
+  SubtracaoComponent,
+  MatFormFieldModule,
+  MatInputModule,
+  MatIconModule,
+  MatButtonModule
 ], 
 providers: [
   SubtracaoService
